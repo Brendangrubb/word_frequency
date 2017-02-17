@@ -46,5 +46,16 @@
 
             $this->assertEquals(3, $result);
         }
+
+        function test_countRepeats_oneToPhraseCaseInsensitive()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $input1 = "ShInY";
+            $input2 = "shiny SHINY ShInY boots of leather";
+
+            $result = $test_RepeatCounter->countRepeats($input1, $input2);
+
+            $this->assertEquals(3, $result);
+        }
     }
 ?>
