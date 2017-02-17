@@ -182,3 +182,27 @@ header {
     font-size: 30px;
     color: #003a6e;
 }
+
+h3#result {
+    font-size: 60px;
+    animation: result_number 1s infinite;
+
+}
+
+@keyframes result_number {
+    0% {
+      color: #fffc95;
+    }
+    20% {
+      color: #ff95cd;
+    }
+    40% {
+      color: #95cdff;
+    }
+    60% {
+      color: #95ffc7;
+    }
+    80% {
+      color: #ffc795;
+    }
+}
