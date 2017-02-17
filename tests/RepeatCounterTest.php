@@ -35,5 +35,16 @@
 
             $this->assertEquals(1, $result);
         }
+
+        function test_countRepeats_oneToPhraseMultiMatch()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $input1 = "shiny";
+            $input2 = "shiny shiny shiny boots of leather";
+
+            $result = $test_RepeatCounter->countRepeats($input1, $input2);
+
+            $this->assertEquals(3, $result);
+        }
     }
 ?>
