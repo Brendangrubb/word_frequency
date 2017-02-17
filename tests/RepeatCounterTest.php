@@ -57,5 +57,16 @@
 
             $this->assertEquals(3, $result);
         }
+
+        function test_countRepeats_oneToPhrasePunctuation()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $input1 = "ShInY";
+            $input2 = "Shiny? Shiny! ..Shiny.. boots of leather";
+
+            $result = $test_RepeatCounter->countRepeats($input1, $input2);
+
+            $this->assertEquals(3, $result);
+        }
     }
 ?>
