@@ -4,9 +4,11 @@
         function countRepeats($input1, $input2)
         {
             $word_counter = 0;
-
+            // echo "before if: " . $word_counter;
             if ($input1 == $input2) {
                 ++ $word_counter;
+                // echo " after 1st if: " . $word_counter;
+
             }
             else
             {
@@ -17,6 +19,8 @@
                     {
                         ++ $word_counter;
                     }
+                    // echo " after 2nd if: " . $word_counter;
+
                 }
             }
 
