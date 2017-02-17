@@ -36,16 +36,25 @@ header {
 }
 
 #border-info-animation {
-    animation: border-info .5s infinite;
+    animation: border-info 1s infinite;
 }
 
 @keyframes border-info {
-  0% {
-    border: 8px solid #ffc795;
-  }
-  50% {
-    border: 8px solid #95ffc7;
-  }
+    0% {
+        border: 8px solid #ffc795;
+    }
+    20% {
+        border: 8px solid #fffc95;
+    }
+    40% {
+        border: 8px solid #ff95cd;
+    }
+    60% {
+        border: 8px solid #95cdff;
+    }
+    80% {
+        border: 8px solid #95ffc7;
+    }
 }
 
 .border1 {
@@ -58,16 +67,25 @@ header {
 }
 
 #border1-animation {
-    animation: border1 .5s infinite;
+    animation: border1 1s infinite;
 }
 
 @keyframes border1 {
-  0% {
-    border: 8px solid #95ffc7;
-  }
-  50% {
-    border: 8px solid #95cdff;
-  }
+    0% {
+      border: 8px solid #95ffc7;
+    }
+    20% {
+      border: 8px solid #ffc795;
+    }
+    40% {
+      border: 8px solid #fffc95;
+    }
+    60% {
+      border: 8px solid #ff95cd;
+    }
+    80% {
+      border: 8px solid #95cdff;
+    }
 }
 
 .border2 {
@@ -79,16 +97,25 @@ header {
 }
 
 #border2-animation {
-    animation: border2 .5s infinite;
+    animation: border2 1s infinite;
 }
 
 @keyframes border2 {
-  0% {
-    border: 8px solid #95cdff;
-  }
-  50% {
-    border: 8px solid #ff95cd;
-  }
+    0% {
+      border: 8px solid #95cdff;
+    }
+    20% {
+      border: 8px solid #95ffc7;
+    }
+    40% {
+      border: 8px solid #ffc795;
+    }
+    60% {
+      border: 8px solid #fffc95;
+    }
+    80% {
+      border: 8px solid #ff95cd;
+    }
 }
 
 .border3 {
@@ -100,16 +127,25 @@ header {
 }
 
 #border3-animation {
-    animation: border3 .5s infinite;
+    animation: border3 1s infinite;
 }
 
 @keyframes border3 {
-  0% {
-    border: 8px solid #ff95cd;
-  }
-  50% {
-    border: 8px solid #fffc95;
-  }
+    0% {
+      border: 8px solid #ff95cd;
+    }
+    20% {
+      border: 8px solid #95cdff;
+    }
+    40% {
+      border: 8px solid #95ffc7;
+    }
+    60% {
+      border: 8px solid #ffc795;
+    }
+    80% {
+      border: 8px solid #fffc95;
+    }
 }
 
 .border4 {
@@ -121,16 +157,25 @@ header {
 }
 
 #border4-animation {
-    animation: border4 .5s infinite;
+    animation: border4 1s infinite;
 }
 
 @keyframes border4 {
-  0% {
-    border: 8px solid #fffc95;
-  }
-  50% {
-    border: 8px solid #ffc795;
-  }
+    0% {
+      border: 8px solid #fffc95;
+    }
+    20% {
+      border: 8px solid #ff95cd;
+    }
+    40% {
+      border: 8px solid #95cdff;
+    }
+    60% {
+      border: 8px solid #95ffc7;
+    }
+    80% {
+      border: 8px solid #ffc795;
+    }
 }
 
 .btn {
