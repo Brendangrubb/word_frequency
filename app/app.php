@@ -17,9 +17,13 @@
         return $app['twig']->render('home.html.twig');
     });
 
-    $app->get('/result', function() use ($app) {
+    $app->post('/result', function() use ($app) {
+        $new_count = new RepeatCounter;
+        $input1 = $_POST['input1'];
+        $input2 = $_POST['input2'];
+        $result = $new_count->countRepeats($input1, $input2);
 
-        return $app['twig']->render('result.html.twig');
+        return $app['twig']->render('result.html.twig', array('result' => $result, 'input1' => $input1, 'input2' => $input2));
     });
 
     return $app;
