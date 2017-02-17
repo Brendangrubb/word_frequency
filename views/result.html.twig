@@ -2,14 +2,33 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
         <link rel="stylesheet" href="/css/styles.css" type="text/css">
         <title>Word Frequency</title>
     </head>
     <body>
         <div class="container">
-            <h4>The word {{input1}} appears in the phrase {{input2}}</h4>
-            <h3>{{result}} times!</h3>
-            <a href="/">Click here to return to home page</a>
+            <header>
+                <h1>Word Count!</h1>
+                <h2>see how many times a specific word is used in a phrase</h2>
+            </header>
+
+            <div class="border4">
+                <div class="border3">
+                    <div class="border2">
+                        <div class="border1">
+                            <div class="border-info">
+                                <h4>The word <em>'{{input1}}'</em> appears in the phrase <em>'{{input2}}'</em></h4>
+                                <h3><b>{{result}}</b> times!</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="anchor">
+                <a href="/">Click here to do it again!</a>
+            </div>
         </div>
     </body>
 </html>
