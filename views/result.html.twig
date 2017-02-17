@@ -13,6 +13,9 @@
                 <h2>see how many times a specific word is used in a phrase</h2>
             </header>
 
+            {% if input1 is empty %}
+            <h3 id="error">{{error}}</h3>
+            {% else %}
             <div id="border4-animation" class="border4">
                 <div id="border3-animation" class="border3">
                     <div id="border2-animation" class="border2">
@@ -25,6 +28,7 @@
                     </div>
                 </div>
             </div>
+            {% endif %}
 
             <div class="anchor">
                 <a href="/">Click here to do it again!</a>

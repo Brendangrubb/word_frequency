@@ -183,6 +183,10 @@ header {
     color: #003a6e;
 }
 
+#error {
+    text-align: center;
+}
+
 h3#result {
     font-size: 60px;
     animation: result_number 1s infinite;

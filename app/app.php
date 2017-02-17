@@ -11,9 +11,7 @@
 
     $app->register(new Silex\Provider\TwigServiceProvider(), array('twig.path'=>__DIR__.'/../views'));
 
-
     $app->get('/', function() use ($app) {
-
         return $app['twig']->render('home.html.twig');
     });
 
@@ -22,8 +20,9 @@
         $input1 = $_POST['input1'];
         $input2 = $_POST['input2'];
         $result = $new_count->countRepeats($input1, $input2);
+        $error = "Go back and enter a word, dummy!";
 
-        return $app['twig']->render('result.html.twig', array('result' => $result, 'input1' => $input1, 'input2' => $input2));
+        return $app['twig']->render('result.html.twig', array('result' => $result, 'input1' => $input1, 'input2' => $input2, 'error' => $error));
     });
 
     return $app;
