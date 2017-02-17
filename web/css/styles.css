@@ -35,6 +35,19 @@ header {
     border-radius: 10px;
 }
 
+#border-info-animation {
+    animation: border-info .5s infinite;
+}
+
+@keyframes border-info {
+  0% {
+    border: 8px solid #ffc795;
+  }
+  50% {
+    border: 8px solid #95ffc7;
+  }
+}
+
 .border1 {
     margin: 10px;
     text-align: center;
@@ -44,13 +57,38 @@ header {
     border-radius: 10px;
 }
 
+#border1-animation {
+    animation: border1 .5s infinite;
+}
+
+@keyframes border1 {
+  0% {
+    border: 8px solid #95ffc7;
+  }
+  50% {
+    border: 8px solid #95cdff;
+  }
+}
+
 .border2 {
     margin: 10px;
     text-align: center;
     border-style: solid;
     border-width: 8px;
     border-color: #95cdff;
-    border-radius: 10px;
+}
+
+#border2-animation {
+    animation: border2 .5s infinite;
+}
+
+@keyframes border2 {
+  0% {
+    border: 8px solid #95cdff;
+  }
+  50% {
+    border: 8px solid #ff95cd;
+  }
 }
 
 .border3 {
@@ -59,7 +97,19 @@ header {
     border-style: solid;
     border-width: 8px;
     border-color: #ff95cd;
-    border-radius: 10px;
+}
+
+#border3-animation {
+    animation: border3 .5s infinite;
+}
+
+@keyframes border3 {
+  0% {
+    border: 8px solid #ff95cd;
+  }
+  50% {
+    border: 8px solid #fffc95;
+  }
 }
 
 .border4 {
@@ -68,7 +118,19 @@ header {
     border-style: solid;
     border-width: 8px;
     border-color: #fffc95;
-    border-radius: 10px;
+}
+
+#border4-animation {
+    animation: border4 .5s infinite;
+}
+
+@keyframes border4 {
+  0% {
+    border: 8px solid #fffc95;
+  }
+  50% {
+    border: 8px solid #ffc795;
+  }
 }
 
 .btn {
